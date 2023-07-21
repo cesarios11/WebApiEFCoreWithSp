@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "1a6fc370-6e06-4cab-812e-44a81d1f1269",
+		"name": "APIRestEFCoreWithSP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4127139"
+	},
+	"item": [
+		{
+			"name": "GetAllProducts1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProducts2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products/getProductList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"getProductList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products/getProductById?idProduct=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"getProductById"
+					],
+					"query": [
+						{
+							"key": "idProduct",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\":\"0\",\r\n    \"ProductName\":\"Product 3\",\r\n    \"ProductDescription\":\"Description 3\",\r\n    \"ProductPrice\":\"3\",\r\n    \"ProductStock\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\":\"0\",\r\n    \"ProductName\":\"Product 4\",\r\n    \"ProductDescription\":\"Description 4\",\r\n    \"ProductPrice\":\"4\",\r\n    \"ProductStock\":\"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Products/createProduct",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"createProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\":\"2\",\r\n    \"ProductName\":\"Product 2 Updated\",\r\n    \"ProductDescription\":\"Description 2 Updated\",\r\n    \"ProductPrice\":\"22\",\r\n    \"ProductStock\":\"22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\":\"3\",\r\n    \"ProductName\":\"Product 3 Updated\",\r\n    \"ProductDescription\":\"Description 3 Updated\",\r\n    \"ProductPrice\":\"33\",\r\n    \"ProductStock\":\"33\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Products/updateProduct",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Products/deleteProduct?idProduct=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Products",
+						"deleteProduct"
+					],
+					"query": [
+						{
+							"key": "idProduct",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Person",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPersonById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Person/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Person",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PersonId\":\"0\",\r\n    \"PersonDNI\":\"13818103\",\r\n    \"PersonFirstName\":\"Tomas\",\r\n    \"PersonLastName\":\"Rios\",\r\n    \"PersonDOB\":\"1952-11-17T11:15:12.345Z\",\r\n    \"IsActive\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Person",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePerson",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PersonId\":\"4\",\r\n    \"PersonDNI\":\"37822799777\",\r\n    \"PersonFirstName\":\"OlguiIII\",\r\n    \"PersonLastName\":\"Porras de RiosSSSS\",\r\n    \"PersonDOB\":\"1950-01-01T11:15:12.345Z\",\r\n    \"IsActive\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Person",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePerson",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Person/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Person",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllVehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Vehicles",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVehicleById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Vehicles/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Vehicles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateVehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"VehicleId\":\"0\",\r\n    \"VehicleBrand\":\"audi\",\r\n    \"Model\":\"2023-12-31T11:15:12.345Z\",\r\n    \"Color\":\"red\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Vehicles",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateVehicle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vehicleId\": 2,\r\n    \"vehicleBrand\": \"hasma\",\r\n    \"model\": \"1997-09-26T06:06:06.345\",\r\n    \"color\": \"yellow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7192/Vehicles",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteVehicle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7192/Vehicles/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7192",
+					"path": [
+						"Vehicles",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

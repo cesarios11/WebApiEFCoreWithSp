@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HTvMwWvvBeAaJmLE/hlSkmvhNDkEvgrETX0F55iN1x4=",
+  "Source": "EntityFrameworkCore_WithSP_Demo",
+  "BasePath": "_content/EntityFrameworkCore_WithSP_Demo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
